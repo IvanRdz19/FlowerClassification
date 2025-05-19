@@ -1,28 +1,52 @@
-## CNN Flower Classification
+# 🌸 CNN Flower Classification
 
-Autor: Iván Rodríguez Cuevas - A01781284
+**Autor:** Iván Rodríguez Cuevas - A01781284  
+**Curso:** TC3002B - Módulo 2
 
 ---
 
-Este es el repositorio de github para el proyecto del módulo 2 de la materia TC3002B.
-El proyecto consiste en crear y entrenar una red neuronal convolutiva para la clasificación de imágenes.
+Este repositorio contiene el desarrollo de un proyecto de red neuronal convolutiva (CNN) enfocado en la clasificación de imágenes de flores.
 
-1. El primer paso fue hallar un dataset apropiado. Decidí utilizar una dataset de Kaggle, el cual contiene imágenes de 5 distintos tipos de flores:
-   
-   -Daisy (Margarita)
-   
-   -Dandelion (Diente de león)
-   
-   -Rose (Rosa)
-   
-   -Tulip (Tulipán)
-   
-   -Sunflower (Girasol)
+## 📌 Descripción del Proyecto
 
-   El dataset original se puede encontrar aquí: [Flowers Dataset](https://www.kaggle.com/datasets/imsparsh/flowers-dataset)
+El objetivo es crear y entrenar una CNN capaz de clasificar imágenes de cinco categorías distintas de flores.
 
-2. Afortunadamente el dataset ya venía separado en las dos carpetas correspondientes:
-   
-   -Test (conteniendo 924 imagenes)
-   
-   -Train (conteniendo 2531 imagenes)
+## 🌼 Clases del Dataset
+
+Se eligió un dataset de Kaggle que contiene imágenes de las siguientes clases:
+
+- 🌼 **Daisy** (Margarita)  
+- 🌻 **Dandelion** (Diente de león)  
+- 🌹 **Rose** (Rosa)  
+- 🌷 **Tulip** (Tulipán)  
+- 🌞 **Sunflower** (Girasol)
+
+📁 Dataset original disponible en:  
+[🔗 Flowers Dataset en Kaggle](https://www.kaggle.com/datasets/imsparsh/flowers-dataset)
+
+## 🗂️ Estructura del Dataset
+
+Afortunadamente el dataset ya viene dividido en dos carpetas:
+
+- `train/` – contiene **2746 imágenes**
+- `test/` – contiene **924 imágenes**
+
+Esto me ayudó, dado que me ahorró el tiempo de hacer la separación de los datos manualmente para entrenamiento y pruebas.
+
+## 🚧 Avances
+
+- [ ] Limpieza y organización del dataset
+- [ ] Exploración de datos
+- [ ] Construcción del modelo CNN
+- [ ] Entrenamiento y validación
+- [ ] Evaluación de resultados
+- [ ] Exportación del modelo
+
+## 🧠 Librerías utilizadas
+
+(Agrega esta sección más adelante cuando empieces a codificar, por ejemplo:)
+
+```python
+import tensorflow as tf
+import numpy as np
+import matplotlib.pyplot as plt
