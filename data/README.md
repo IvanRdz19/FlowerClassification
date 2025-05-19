@@ -7,3 +7,5 @@ Puedes acceder al dataset original en Kaggle:
 
 O puedes ver el dataset limpio en mi Google Drive:
 🔗 [Flowers Dataset - Drive](https://drive.google.com/drive/folders/12I5WA2ZEWwAT2bU0byXknFdpkOsZiqyP?usp=sharing)
+
+Igualmente en estas carpetas se encuentra un pequeño sample de las imagenes que se utilizaron para entrenar la CNN.
