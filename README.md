@@ -74,6 +74,7 @@ Como se nos enseñó en la materia, para poder entrenar una red neuronal convolu
 ## 🧠 Librerías utilizadas
 
 ```python
-import tensorflow as tf
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+import os
+import tensorflow as tf
