@@ -78,6 +78,7 @@ Adaptamos el código proporcionado por el profesor a nuestro código y generamos
 | Tulip       | 1004     |
 | **Total**   | **5062** |
 
+Estas nuevas imagenes las guardé en una carpeta llamada `augmented_train/` y al igual que con la carpeta de `train/`, esta carpeta se seccionó en 5 nuevas carpetas con cada clase de flor que tenemos.
 
 ## 🚧 Avances
 
