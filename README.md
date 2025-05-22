@@ -52,7 +52,7 @@ Después de limpiar los datos, la carpeta de `train/`  quedó de la siguiente ma
 
 ## 📊 Distribución del Dataset (después de la limpieza)
 
-Como se nos enseñó en la materia, para poder entrenar una red neuronal convolutiva de manera éxitosa se debe de tener una cantidad de datos casi igual para cada clase, pero después de realizar la limpieza las clases quedaron con los siguientes porcentajes:
+Como se nos enseñó en la materia, para poder entrenar una red neuronal convolutiva de manera éxitosa se debe de tener una cantidad de datos casi igual para cada clase, después de realizar la limpieza las clases quedaron con los siguientes porcentajes:
 
 | Clase       | Imágenes | Porcentaje (%) |
 |-------------|----------|----------------|
@@ -62,6 +62,22 @@ Como se nos enseñó en la materia, para poder entrenar una red neuronal convolu
 | Sunflower   | 481      | 19.01%         |
 | Tulip       | 502      | 19.83%         |
 | **Total**   | **2531** | **100%**       |
+
+## 💉 Data Augmentation
+
+Para poder entrenar un modelo de mejor manera se necesitan más datos, para esto realizamos una técnica de data augmentation que se nos enseñó en clase.
+Esta técnica consiste en tomar las imagenes y cambiarlas levemente, ya sea rotandolas o invirtiéndolas verticalmente.
+Adaptamos el código proporcionado por el profesor a nuestro código y generamos el doble de imágens.
+
+| Clase       | Imágenes |
+|-------------|----------|
+| Daisy       | 988      |
+| Dandelion   | 1280     |
+| Rose        | 828      |
+| Sunflower   | 962      |
+| Tulip       | 1004     |
+| **Total**   | **5062** |
+
 
 ## 🚧 Avances
 
