@@ -63,28 +63,39 @@ Como se nos enseñó en la materia, para poder entrenar una red neuronal convolu
 | Tulip       | 502      | 19.83%         |
 | **Total**   | **2531** | **100%**       |
 
+## 📚 Separación train y validation
+
+Posterior a la limpieza del dataset se hizo la separación de datos entre los datos de entrenamiento (train) y los datos con los que se validará el modelo (validation). Separamos el 20% de los datos que tenemos en la carpeta de `train/` y los movimos a una carpeta llamada `validation_data/`. El 20% de los datos son 506, para fines practicos se redondeó este número y se seleccionaron 500 imágenes en total para validación (100 imágenes por cada clase de flor).
+
 ## 💉 Data Augmentation
 
 Para poder entrenar un modelo de mejor manera se necesitan más datos, para esto realizamos una técnica de data augmentation que se nos enseñó en clase.
 Esta técnica consiste en tomar las imagenes y cambiarlas levemente, ya sea rotandolas o invirtiéndolas verticalmente.
-Adaptamos el código proporcionado por el profesor a nuestro código y generamos el triple de imágenes (2 imágenes aumentadas por cada imágen original).
+Adaptamos el código proporcionado por el profesor a nuestro código y generamos aproximadamente el triple de imágenes.
 
 | Clase       | Imágenes |
 |-------------|----------|
-| Daisy       | 1482     |
-| Dandelion   | 1920     |
-| Rose        | 1242     |
-| Sunflower   | 1443     |
-| Tulip       | 1506     |
-| **Total**   | **7593** |
+| Daisy       | 1382     |
+| Dandelion   | 1820     |
+| Rose        | 1142     |
+| Sunflower   | 1343     |
+| Tulip       | 1406     |
+| **Total**   | **7093** |
 
 Estas nuevas imagenes las guardé en una carpeta llamada `augmented_train/` y al igual que con la carpeta de `train/`, esta carpeta se seccionó en 5 nuevas carpetas con cada clase de flor que tenemos.
 
+## 🛠️ Construcción de la CNN
+
+Para poder empezar a construir la red neuronal convolutiva primero indagué y busqué artículos (papers) sobre este tema. Después de leer unos cuantos y ver las arquitecturas y resultados que obtenian opté por implementar la arquitectura mencionada en el siguiente paper:
+
+[🔗 Flower Classification with Deep CNN and Machine Learning Algorithms](https://ieeexplore.ieee.org/abstract/document/8932908)
+
+
 ## 🚧 Avances
 
-- [ ] Limpieza y organización del dataset
-- [ ] Escalamiento de datos
-- [ ] Construcción del modelo CNN
+- [X] Limpieza y organización del dataset
+- [X] Escalamiento de datos
+- [X] Construcción del modelo CNN
 - [ ] Entrenamiento y validación
 - [ ] Evaluación de resultados
 
