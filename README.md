@@ -67,16 +67,16 @@ Como se nos enseñó en la materia, para poder entrenar una red neuronal convolu
 
 Para poder entrenar un modelo de mejor manera se necesitan más datos, para esto realizamos una técnica de data augmentation que se nos enseñó en clase.
 Esta técnica consiste en tomar las imagenes y cambiarlas levemente, ya sea rotandolas o invirtiéndolas verticalmente.
-Adaptamos el código proporcionado por el profesor a nuestro código y generamos el doble de imágens.
+Adaptamos el código proporcionado por el profesor a nuestro código y generamos el triple de imágenes (2 imágenes aumentadas por cada imágen original).
 
 | Clase       | Imágenes |
 |-------------|----------|
-| Daisy       | 988      |
-| Dandelion   | 1280     |
-| Rose        | 828      |
-| Sunflower   | 962      |
-| Tulip       | 1004     |
-| **Total**   | **5062** |
+| Daisy       | 1482     |
+| Dandelion   | 1920     |
+| Rose        | 1242     |
+| Sunflower   | 1443     |
+| Tulip       | 1506     |
+| **Total**   | **7593** |
 
 Estas nuevas imagenes las guardé en una carpeta llamada `augmented_train/` y al igual que con la carpeta de `train/`, esta carpeta se seccionó en 5 nuevas carpetas con cada clase de flor que tenemos.
 
