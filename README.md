@@ -90,6 +90,15 @@ Para poder empezar a construir la red neuronal convolutiva primero indagué y bu
 
 [🔗 Flower Classification with Deep CNN and Machine Learning Algorithms](https://ieeexplore.ieee.org/abstract/document/8932908)
 
+La arquitectura propuesta en el paper consiste en lo siguiente:
+
+blah blah blah
+
+## 🗃️ Google Drive
+
+El link a la carpeta de Drive donde se puede encontrar todo lo relacionado al proyecto, incluyendo el modelo, es el siguiente:
+
+[🔗 Modulo2-CNN](https://drive.google.com/drive/folders/1nuC3y95_OiF5_yCtBkUkDkcrK6HXi0-I?usp=drive_link)
 
 ## 🚧 Avances
 
