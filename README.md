@@ -93,7 +93,23 @@ convolutional neural networks](https://d1wqtxts1xzle7.cloudfront.net/80918318/34
 
 La arquitectura propuesta en el paper consiste en lo siguiente:
 
-blah blah blah
+| Capa               | Tipo                     |
+|--------------------|--------------------------|
+| Input              | Input de la imagén       |
+| Conv1              | Convolución (16x16)      |
+| Conv2              | Convolución (9x9)        |
+| StochPool1         | Pooling Estocástico      |
+| Dropout1           | Regularización           |
+| Conv3              | Convolución (5x5)        |
+| Conv4              | Convolución (5x5)        |
+| StochPool2         | Pooling Estocástico      |
+| Dropout2           | Regularización           |
+| Flatten            | Aplanamiento             |
+| Dense1             | Capa Dense               |
+| Dropout3           | Regularización           |
+| Output             | Clasificación            |
+
+Algo importante, es que cabe recalcar que esta arquitectura utiliza activación 'tanh' en lugar de 'Relu'. Esto con el fin de capturar mejores texturas o colores en los petalos de las flores.
 
 ## 🗃️ Google Drive
 
