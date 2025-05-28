@@ -110,6 +110,29 @@ La arquitectura propuesta en el paper consiste en lo siguiente:
 | Output             | Clasificación            |
 
 Algo importante, es que cabe recalcar que esta arquitectura utiliza activación 'tanh' en lugar de 'Relu'. Esto con el fin de capturar mejores texturas o colores en los petalos de las flores.
+En el paper mencionan que utilizando tanh alcanzaron un **97.78%** de accuracy, a diferencia de ReLU con la cuál alcanzaron **94%**.
+
+Debido a que mi GPU no es tan potente y además yo solo clasifico 5 tipos de flores, decidí reducir la red para adaptarla a mi caso. Mi arquitectura quedó de la siguiente manera:
+
+| Capa               | Tipo                     |
+|--------------------|--------------------------|
+| Input              | Input de la imagén       |
+| Conv1              | Convolución (16x16)      |
+| MaxPool            | Max Pooling              |
+| Dropout1           | Regularización (0.25)    |
+| Conv2              | Convolución (9x9)        |
+| MaxPool            | Max Pooling              |
+| Dropout2           | Regularización (0.25)    |
+| Conv3              | Convolución (5x5)        |
+| Conv4              | Convolución (5x5)        |
+| MaxPool            | Max Pooling              |
+| Dropout            | Dropout (0.25)           |
+| Flatten            | Aplanado                 |
+| Dense              | Densa (64)               |
+| Dropout            | Dropout (0.5)            |
+| Dense              | Densa (5)                |
+| Output             | Clasificación            |
+
 
 ## 🗃️ Google Drive
 
