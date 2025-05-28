@@ -75,12 +75,12 @@ Adaptamos el código proporcionado por el profesor a nuestro código y generamos
 
 | Clase       | Imágenes |
 |-------------|----------|
-| Daisy       | 1382     |
-| Dandelion   | 1820     |
-| Rose        | 1142     |
-| Sunflower   | 1343     |
-| Tulip       | 1406     |
-| **Total**   | **7093** |
+| Daisy       | 1576     |
+| Dandelion   | 2160     |
+| Rose        | 1296     |
+| Sunflower   | 1524     |
+| Tulip       | 1608     |
+| **Total**   | **8164** |
 
 Estas nuevas imagenes las guardé en una carpeta llamada `augmented_train/` y al igual que con la carpeta de `train/`, esta carpeta se seccionó en 5 nuevas carpetas con cada clase de flor que tenemos.
 
@@ -88,7 +88,8 @@ Estas nuevas imagenes las guardé en una carpeta llamada `augmented_train/` y al
 
 Para poder empezar a construir la red neuronal convolutiva primero indagué y busqué artículos (papers) sobre este tema. Después de leer unos cuantos y ver las arquitecturas y resultados que obtenian opté por implementar la arquitectura mencionada en el siguiente paper:
 
-[🔗 Flower Classification with Deep CNN and Machine Learning Algorithms](https://ieeexplore.ieee.org/abstract/document/8932908)
+[🔗 An efficient classification of flower images with
+convolutional neural networks](https://d1wqtxts1xzle7.cloudfront.net/80918318/3444-libre.pdf?1645009408=&response-content-disposition=inline%3B+filename%3DAn_efficient_classification_of_flower_im.pdf&Expires=1748469315&Signature=bdfRdsCHZU8Rb44msRGHyl043bniMC2ADfZza0q7eBaq8wAubqtcQ5AeGa8Jv~~-1FXD5RBtYMap4WUzv9WPYhLyU2jTGEm32rTHc1fOdq4rKkRp7L4np004X6PebWLeXgM6ljEmuNvbANFNDqSnLz4Y5bT97QQfO~uGPz2pPo6H551QuQYc9xwMdtYGryFOAEyccIvry1tDvHi9~7dm8gr9om2q1GJZhkmxcESvQRbxjY3PZx23MC9dVbejE35VuOtG2cRZEDrwltmz96RpRX4aT-DFtr4UE0pz1DNbYlVYaBtkeKdJSGMqxOWX9V1SLkDj~ozhdKfJNC3x1DYL9Q__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
 
 La arquitectura propuesta en el paper consiste en lo siguiente:
 
