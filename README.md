@@ -53,10 +53,3 @@ Se compararon dos modelos CNN:
 📁 Carpeta de Google Drive con modelos, datasets y scripts:  
 [🔗 Modulo2-CNN - Google Drive](https://drive.google.com/drive/folders/1nuC3y95_OiF5_yCtBkUkDkcrK6HXi0-I?usp=drive_link)
 
-## 🧠 Librerías utilizadas
-
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-import os
-import tensorflow as tf
