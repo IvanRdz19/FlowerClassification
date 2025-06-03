@@ -46,6 +46,15 @@ Se compararon dos modelos CNN:
 - 🧪 **Modelo 1**: 70% de accuracy con alto sobreajuste.  
 - 🧪 **Modelo 2**: 79.25% de accuracy y mejor generalización con 87% menos parámetros.
 
+## 🔧 Mini servidor local con Flask
+
+Se desarrolló un mini servidor local utilizando **Flask** que permite subir imágenes directamente desde la web para realizar la clasificación con ambos modelos CNN. Esta interfaz web facilita la prueba y visualización en tiempo real del **predict** generado por cada modelo para una imagen dada.
+
+- Puedes subir imágenes de flores desde tu computadora o ingresar URLs de imágenes en línea.  
+- La aplicación procesa la imagen y muestra la predicción de cada modelo, permitiendo comparar fácilmente sus resultados.
+
+Esta herramienta sirve para evaluar de manera práctica el desempeño de los modelos sin necesidad de usar código.
+
 ---
 
 ## 🗃️ Recursos adicionales
