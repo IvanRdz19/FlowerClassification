@@ -39,7 +39,7 @@ Se compararon dos modelos CNN:
 - 📘 **Modelo 1:** Basado en la arquitectura propuesta por Prasad et al. (alta complejidad, tanh, pooling estocástico).  
 - 🧩 **Modelo 2:** Arquitectura optimizada (menos parámetros, ReLU, max pooling, regularización).
 
-> Para ver el diseño completo de ambas arquitecturas y su rendimiento, consulta el [paper](./flower_classification_paper.pdf).
+> Para ver el diseño completo de ambas arquitecturas y su rendimiento, consulta el [paper](./PaperFlowers.pdf).
 
 ## 🚀 Resultados Generales
 
