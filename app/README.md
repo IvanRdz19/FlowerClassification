@@ -17,9 +17,12 @@ Una vez descargados, colócalos en el mismo directorio que el archivo `app.py`.
 
 ## ▶️ Cómo correr la app
 
-1. Instala Flask si no lo tienes:
+1. En tu terminal corre el siguiente comando, asegurate de tener python y flask instalado:
 
 ```bash
-pip install flask
 python app.py
+```
+2. Abre el link que aparece en tu terminal:
+ ```bash
+http://127.0.0.1:5000
 ```
