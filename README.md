@@ -12,7 +12,7 @@ Este repositorio contiene el desarrollo de un proyecto de red neuronal convoluti
 Toda la información detallada sobre la metodología, limpieza del dataset, arquitecturas utilizadas, procesos de aumentación de datos, entrenamiento y comparación de resultados se encuentra documentada en el siguiente artículo:
 
 📘 **Consulta el paper completo aquí**:  
-[🔗 Descargar paper (PDF)](./Clasificación de Flores_ Comparativa entre CNNs Simples y Complejas.pdf)
+[🔗 Paper (PDF)](./PaperFlowers.pdf)
 
 ### 🔬 Resumen (Abstract)
 
