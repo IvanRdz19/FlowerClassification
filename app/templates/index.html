@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Clasificador de Flores</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 50px; }
+    .dropzone {
+      border: 2px dashed #aaa;
+      border-radius: 10px;
+      padding: 40px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .dropzone.dragover {
+      background-color: #e0f7fa;
+    }
+    img { margin-top: 20px; max-width: 300px; }
+    .models-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .model-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px;
+      min-width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Comparador de CNNs 🌺</h1>
+
+<form method="POST" enctype="multipart/form-data">
+  <div class="dropzone" id="dropzone">
+    Arrastra y suelta una imagen o selecciona un archivo
+    <input type="file" name="file" id="fileInput" style="display: none;" accept="image/*">
+  </div>
+  <button type="submit">Clasificar</button>
+</form>
+
+{% if prediction1 or prediction2 %}
+  <div class="models-container">
+    <!-- Modelo 1 -->
+    <div class="model-card">
+      <h2>Modelo 1 (complejo)</h2>
+      {% if prediction1 %}
+        <h3>Predicción: {{ prediction1 }}</h3>
+        <h4>Probabilidades:</h4>
+        <ul style="list-style: none; padding: 0;">
+          {% for class_name, percent in percentages1 %}
+            <li>{{ class_name }}: {{ percent }}%</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>Esperando predicción...</p>
+      {% endif %}
+    </div>
+    
+    <!-- Modelo 2 -->
+    <div class="model-card">
+      <h2>Modelo 2 (ligero)</h2>
+      {% if prediction2 %}
+        <h3>Predicción: {{ prediction2 }}</h3>
+        <h4>Probabilidades:</h4>
+        <ul style="list-style: none; padding: 0;">
+          {% for class_name, percent in percentages2 %}
+            <li>{{ class_name }}: {{ percent }}%</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>Esperando predicción...</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <img src="{{ url_for('static', filename='uploads/' + filename) }}">
+{% endif %}
+
+<script>
+  const dropzone = document.getElementById('dropzone');
+  const fileInput = document.getElementById('fileInput');
+
+  dropzone.addEventListener('click', () => fileInput.click());
+  dropzone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropzone.classList.add('dragover');
+  });
+  dropzone.addEventListener('dragleave', () => {
+    dropzone.classList.remove('dragover');
+  });
+  dropzone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    fileInput.files = e.dataTransfer.files;
+    dropzone.classList.remove('dragover');
+  });
+</script>
+
+</body>
+</html>
