@@ -1,12 +1,11 @@
 # 🌼 Flask App - Clasificación de Flores
 
-Este mini servidor local fue desarrollado con **Flask** y permite subir imágenes desde tu computadora o desde una URL para obtener la predicción de dos modelos de clasificación de flores basados en redes neuronales convolutivas (CNN).
+Este mini servidor local fue desarrollado con **Flask** y permite subir imágenes desde la computadora o arrastrandolas (drag and drop) para obtener la predicción de dos modelos de clasificación de flores basados en redes neuronales convolutivas (CNN).
 
 ## 🚀 ¿Qué hace?
 
-- Permite cargar imágenes desde archivos locales o URLs.
 - Muestra la predicción generada por **dos modelos CNN** previamente entrenados.
-- Compara los resultados de ambas arquitecturas de manera sencilla desde una interfaz web.
+- Compara los resultados (predict) de ambas arquitecturas de manera sencilla desde una interfaz web.
 
 ## ⚠️ Nota
 
